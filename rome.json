@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.rome.tools/schemas/12.1.3/schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "style": {
+        "useBlockStatements": "off",
+        "noNonNullAssertion": "off"
+      },
+      "nursery": {
+        "useExhaustiveDependencies": "off"
+      }
+    }
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "files": {
+    "ignore": ["node_modules/", "dist"]
+  }
+}

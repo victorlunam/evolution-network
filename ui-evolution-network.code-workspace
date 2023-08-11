@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../api-evolution-network"
+    }
+  ],
+  "settings": {
+    "cSpell.words": ["ahooks", "github", "signup", "zustand"],
+    "cSpell.language": "en,es-ES"
+  }
+}
