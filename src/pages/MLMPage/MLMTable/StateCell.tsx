@@ -34,11 +34,15 @@ const StyledBadge = styled("span", {
 });
 
 const StateCell = ({ field, dataItem }: CellProps<MLMModel>) => {
-  const cellValue = dataItem[field!];
+  const type = dataItem[field!] ? 'complete' : 'incomplete';
+  const cellValue = dataItem[field!] ? 'ACTIVE' : 'INACTIVE';
+
+
+  console.log(cellValue)
 
   return (
     <StyledTableCell>
-      <StyledBadge type={cellValue}>{cellValue}</StyledBadge>
+      <StyledBadge type={type}>{cellValue}</StyledBadge>
     </StyledTableCell>
   );
 };

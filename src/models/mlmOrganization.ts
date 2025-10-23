@@ -3,7 +3,7 @@ import { InferType, boolean, object, string } from "yup";
 const mlmOrganizationSchema = object({
   id: string().required(),
   parentId: string().required(),
-  childrenId: string().required(),
+  childrenId: string(),
   fullName: string().required(),
   phone: string().required(),
   isVerified: boolean().required(),

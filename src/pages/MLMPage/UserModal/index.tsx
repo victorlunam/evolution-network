@@ -112,7 +112,7 @@ const UserModal = ({ onSave, onClose }: UserModalProps) => {
     >
       <Form onSubmit={onSubmit} schema={signUpRequestSchema}>
         <Modal.Header>
-          <Text>Nuevo Socio</Text>
+          <Text>New Referral</Text>
         </Modal.Header>
 
         <Modal.Body>
@@ -120,20 +120,20 @@ const UserModal = ({ onSave, onClose }: UserModalProps) => {
             <Input
               {...register("names")}
               aria-label="Nombres"
-              placeholder="Nombres"
+              placeholder="Name"
               fullWidth
             />
             <Input
               {...register("lastNames")}
               aria-label="Apellidos"
-              placeholder="Apellidos"
+              placeholder="Last Name"
               fullWidth
             />
 
             <Input
               {...register("dni")}
               aria-label="dni"
-              placeholder="DNI"
+              placeholder="Legal ID"
               maxLength={8}
               fullWidth
             />
@@ -141,65 +141,20 @@ const UserModal = ({ onSave, onClose }: UserModalProps) => {
               {...register("dateOfBirth")}
               type="date"
               aria-label="Fecha de Nacimiento"
-              placeholder="Fecha de Nacimiento"
+              placeholder="Date of Birth"
               fullWidth
             />
-
-            <Row
-              css={{
-                gridColumn: "span 2",
-                gap: "$xs",
-              }}
-              wrap="wrap"
-            >
-              <Dropdown
-                css={{
-                  flex: "1",
-                }}
-                name="departmentId"
-                placeholder="Departamento"
-                data={departmentList?.value ?? []}
-                dataItemKey="id"
-                textField="name"
-                onChange={(id) => setLocationState({ departmentId: id })}
-              />
-              <Dropdown
-                css={{
-                  flex: "1",
-                }}
-                name="provinceId"
-                placeholder="Provincia"
-                data={provinceList?.value ?? []}
-                dataItemKey="id"
-                textField="name"
-                disabled={!locationState.departmentId}
-                onChange={(id) => setLocationState({ provinceId: id })}
-                resetFrom={locationState.departmentId}
-              />
-              <Dropdown
-                css={{
-                  flex: "1",
-                }}
-                name="districtId"
-                placeholder="Distrito"
-                data={districtList?.value ?? []}
-                dataItemKey="id"
-                textField="name"
-                disabled={!locationState.provinceId}
-                resetFrom={locationState.provinceId}
-              />
-            </Row>
 
             <Input
               {...register("address")}
               aria-label="Dirección"
-              placeholder="Dirección"
+              placeholder="Address"
               fullWidth
             />
             <Input
               {...register("phone")}
               aria-label="Celular"
-              placeholder="Celular"
+              placeholder="Phone"
               fullWidth
             />
 
@@ -209,32 +164,19 @@ const UserModal = ({ onSave, onClose }: UserModalProps) => {
                 textAlign: "center",
               }}
             >
-              Accesos
+              User Accesses
             </Text>
 
             <Input
               {...register("username")}
               aria-label="Usuario"
-              placeholder="Usuario"
+              placeholder="username"
               fullWidth
             />
             <Input.Password
               {...register("password")}
               aria-label="Contraseña"
-              placeholder="Contraseña"
-              fullWidth
-            />
-
-            <Input
-              {...register("email")}
-              aria-label="Email"
-              placeholder="Email"
-              fullWidth
-            />
-            <Input
-              {...register("emailConfirmation")}
-              aria-label="Confirme Email"
-              placeholder="Confirme Email"
+              placeholder="password"
               fullWidth
             />
           </Grid>

@@ -8,10 +8,10 @@ import { MLMController } from "@controllers/index";
 import { MLMOrganization } from "@models/mlmOrganization";
 
 const columns: TableColumn<MLMOrganization>[] = [
-  { field: "fullName", title: "NOMBRE", cell: DetailCell },
-  { field: "phone", title: "CELULAR", cell: PhoneCell },
-  { field: "isVerified", title: "ESTADO", cell: StateCell },
-  { title: "ACCIONES", cell: ActionCell },
+  { field: "fullName", title: "NAMES", cell: DetailCell },
+  { field: "phone", title: "PHONE", cell: PhoneCell },
+  { field: "isVerified", title: "STATUS", cell: StateCell },
+  { title: "ACTIONS", cell: ActionCell },
 ];
 
 const MLMTableDetail = ({ dataItem }: DetailProps<MLMOrganization>) => {

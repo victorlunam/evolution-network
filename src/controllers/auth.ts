@@ -32,9 +32,25 @@ const signUp = async (
 };
 
 const signIn = async (data: SignInRequest): Promise<ApiResponse<Session>> => {
-  const res = await fetcher.post("api/auth/signIn", {
-    data,
-  });
+  // const res = await fetcher.post("api/auth/signIn", {
+  //   data,
+  // });
+  
+  const res = {
+    status: true,
+    value: {
+      profileId: 'c3591c82-020c-48cc-8ddf-23adce6625b7',
+      userId: '7c89ce95-0392-4550-909b-5d293beea6c1',
+      mlmId: 'd903106e-946b-4988-8cc8-212cfa99b93b',
+      names: 'Cesar',
+      lastNames: 'Perez Fernandez',
+      fullName: 'Cesar Perez Fernandez',
+      shortName: 'Cesar Perez',
+      username: 'cperez',
+      email: 'cesar@test.com',
+      phone: '+51999000999',
+    }
+  }
 
   return apiResponseSchema(sessionSchema.nullable()).validate(res);
 };

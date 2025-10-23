@@ -28,11 +28,11 @@ const Navigation = () => {
         <BrandLogo to="/home" />
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-        {menuItems.map((menu) => (
+        {/* {menuItems.map((menu) => (
           <Navbar.Item key={menu.path} to={menu.path}>
             <RRDLink to={menu.path}>{menu.label}</RRDLink>
           </Navbar.Item>
-        ))}
+        ))} */}
       </Navbar.Content>
 
       <Navbar.Content
@@ -85,7 +85,7 @@ const Navigation = () => {
       </Navbar.Content>
 
       <Navbar.Collapse>
-        {menuItems.map((menu) => (
+        {/* {menuItems.map((menu) => (
           <Navbar.CollapseItem key={menu.path}>
             <RRDLink
               to={menu.path}
@@ -97,7 +97,7 @@ const Navigation = () => {
               {menu.label}
             </RRDLink>
           </Navbar.CollapseItem>
-        ))}
+        ))} */}
       </Navbar.Collapse>
     </Navbar>
   );

@@ -20,8 +20,9 @@ const MLMPage = () => {
   return (
     <Layout>
       <Container display="flex" justify="flex-end">
-        <Button onPress={() => setVisible(true)}>Link</Button>
-        <Button onPress={() => setVisible(true)}>Agregar</Button>
+        {/* <Button onPress={() => setVisible(true)}>Link</Button> */}
+        <Spacer x={1} />
+        <Button onPress={() => setVisible(true)}>Add</Button>
       </Container>
       <Spacer y={1} />
 

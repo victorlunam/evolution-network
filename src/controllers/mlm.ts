@@ -19,7 +19,7 @@ const search = async (params: {
 const searchOrganization = async (
   userId: string,
 ): Promise<ApiResponse<MLMOrganization[]>> => {
-  const res = await fetcher.get(`api/mlm/organization/${userId}`);
+  const res = await fetcher.get(`mlm/${userId}`);
 
   return apiResponseSchema(array(mlmOrganizationSchema).required()).validate(
     res,

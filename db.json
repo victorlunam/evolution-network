@@ -1,0 +1,94 @@
+{
+  "mlm": [
+    {
+      "id": "7c89ce95-0392-4550-909b-5d293beea6c1",
+      "status": true,
+      "value": [
+        {
+          "id": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "parentId": "4382a5c3-45c1-4327-adaa-5de216576cc9",
+          "childrenId": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "fullName": "Juan Perez",
+          "phone": "+51999000999",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        },
+        {
+          "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "",
+          "fullName": "Fernando Manrique",
+          "phone": "+51999453123",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        },
+        {
+          "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "fullName": "Valeria Linares",
+          "phone": "+51999777222",
+          "isVerified": false,
+          "depositPhotoURL": ""
+        },
+        {
+          "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "",
+          "fullName": "Victor Luna",
+          "phone": "+51999999999",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        },
+        {
+          "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "39627d23-a864-47ab-803b-350f81b53e10",
+          "fullName": "Fernanda Quinto",
+          "phone": "+51999333212",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        }
+      ]
+    },
+    {
+      "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+      "status": true,
+      "value": [
+        {
+          "id": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "parentId": "4382a5c3-45c1-4327-adaa-5de216576cc9",
+          "childrenId": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "fullName": "Jimena Rios",
+          "phone": "+51999000999",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        },
+        {
+          "id": "1b0590c4-a91b-4516-b553-6b596ffef2da",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "",
+          "fullName": "Flor Quispe",
+          "phone": "+51999453123",
+          "isVerified": true,
+          "depositPhotoURL": ""
+        }
+      ]
+    },
+    {
+      "id": "39627d23-a864-47ab-803b-350f81b53e10",
+      "status": true,
+      "value": [
+        {
+          "id": "39627d23-a864-47ab-803b-350f81b53e10",
+          "parentId": "7c89ce95-0392-4550-909b-5d293beea6c1",
+          "childrenId": "",
+          "fullName": "Elizabeth Linares",
+          "phone": "+51999777222",
+          "isVerified": false,
+          "depositPhotoURL": ""
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { CellProps, StyledTableCell } from "@components/Table";
 import { MLMModel } from ".";
 import { Col, Row, Tooltip } from "@nextui-org/react";
 import IconButton from "@components/IconButton";
-import { EditIcon, EyeIcon, TrashIcon } from "@components/icons";
+import { AddUserIcon, EditIcon, EyeIcon, TrashIcon } from "@components/icons";
 import { TABLE_FIELD_DETAIL } from "@components/Table/utils";
 
 const ActionCell = ({ rowIndex, dataItem, onChange }: CellProps<MLMModel>) => {
@@ -27,6 +27,18 @@ const ActionCell = ({ rowIndex, dataItem, onChange }: CellProps<MLMModel>) => {
           >
             <IconButton>
               <EyeIcon size={20} fill="#979797" />
+            </IconButton>
+          </Tooltip>
+        </Col>
+        <Col css={{ d: "flex" }}>
+          <Tooltip
+            content="Añadir"
+            css={undefined}
+            color={undefined}
+            contentColor={undefined}
+          >
+            <IconButton onClick={() => console.log("Add user", dataItem.id)}>
+              <AddUserIcon size={20} fill="#979797" />
             </IconButton>
           </Tooltip>
         </Col>

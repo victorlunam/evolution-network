@@ -7,7 +7,7 @@ import {
   Spacer,
   Text,
 } from "@nextui-org/react";
-import logo from "@assets/images/logo-v1.png";
+import logo from "@assets/brand.png";
 import Centered from "@components/Centered";
 import Page from "@components/Page";
 import { Form, FormSubmitEvent, useValidation } from "@components/Form";
@@ -64,29 +64,36 @@ const LoginPage = () => {
         >
           <Form onSubmit={handleSubmit} schema={signInRequestSchema}>
             <Card>
-              <Card.Header>
+              <Card.Header style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap : '1rem',
+
+              }}>
                 <img
                   alt="evolution network logo"
                   src={logo}
                   style={{
-                    width: "min(80%,325px)",
+                    width: "min(20%,325px)",
                     margin: "auto",
                   }}
                 />
+
+                Agent Referral System
               </Card.Header>
               <Card.Body>
                 <Spacer />
                 <Input
                   {...register("username")}
                   aria-label="Usuario"
-                  placeholder="Usuario"
+                  placeholder="Username"
                   fullWidth
                 />
                 <Spacer />
                 <Input.Password
                   {...register("password")}
                   aria-label="Contraseña"
-                  placeholder="Contraseña"
+                  placeholder="Password"
                   fullWidth
                 />
                 <Spacer />
@@ -97,8 +104,8 @@ const LoginPage = () => {
                     gap: "$5",
                   }}
                 >
-                  <Button type="submit">Ingresar</Button>
-                  <Button light>Olvide mi Contraseña</Button>
+                  <Button type="submit">Login</Button>
+                  {/* <Button light>Olvide mi Contraseña</Button> */}
                 </Row>
 
                 {error && (
